@@ -45,6 +45,46 @@
 
     return $iconstring;
   }
+ 
+  function getClassIcon($class)
+  {
+    $iconstring = "";
+    switch($class)
+    {
+      case '1':
+        $iconstring = "images/icons/classes_warrior.png";
+        break;
+      case '2':
+        $iconstring = "images/icons/classes_warrior.png";
+        break;
+      case '3':
+        $iconstring = "images/icons/classes_hunter.png";
+        break;
+      case '4':
+        $iconstring = "images/icons/classes_rogue.png";
+        break;
+      case '5':
+        $iconstring = "images/icons/classes_priest.png";
+        break;
+      case '6':
+        $iconstring = "images/icons/classes_deathknight.png";
+        break;
+      case '7':
+        $iconstring = "images/icons/classes_shaman.png";
+        break;
+      case '8':
+        $iconstring = "images/icons/classes_mage.png";
+        break;
+      case '9':
+        $iconstring = "images/icons/classes_warlock.png";
+        break;
+      case '11':
+        $iconstring = "images/icons/classes_druid.png";
+        break;
+    }
+
+    return $iconstring;
+  }
   /*echo "<tr>";
       echo "<td>".$row["name"]."</th>";
       echo "<td>".$row["level"]."</th>";
@@ -61,6 +101,7 @@
         echo "<tr>";
         echo "<td>".$row["name"]."</td>";
         echo "<td>".$row["level"]."</td>";
+        echo "<td><img class='class-icon' src='" . getClassIcon($row['race'], $row['gender']) . "'/></td>";
         echo "<td><img class='class-icon' src='" . getRaceIcon($row['race'], $row['gender']) . "'/></td>";
         echo "</tr>";
       }
