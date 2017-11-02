@@ -55,7 +55,7 @@
         $iconstring = "images/icons/classes_warrior.png";
         break;
       case '2':
-        $iconstring = "images/icons/classes_warrior.png";
+        $iconstring = "images/icons/classes_paladin.png";
         break;
       case '3':
         $iconstring = "images/icons/classes_hunter.png";
@@ -101,7 +101,7 @@
         echo "<tr>";
         echo "<td>".$row["name"]."</td>";
         echo "<td>".$row["level"]."</td>";
-        echo "<td><img class='class-icon' src='" . getClassIcon($row['race'], $row['gender']) . "'/></td>";
+        echo "<td><img class='class-icon' src='" . getClassIcon($row['class']) . "'/></td>";
         echo "<td><img class='class-icon' src='" . getRaceIcon($row['race'], $row['gender']) . "'/></td>";
         echo "</tr>";
       }
