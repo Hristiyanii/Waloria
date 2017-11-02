@@ -30,8 +30,9 @@
             <table class="table table-hover">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Level</th>
+                  <th style="text-align:center">Name</th>
+                  <th style="text-align:center">Level</th>
+                  <th style="text-align:center">Class</th>
                   <th style="text-align:center">Race</th>
                 </tr>
               </thead>
